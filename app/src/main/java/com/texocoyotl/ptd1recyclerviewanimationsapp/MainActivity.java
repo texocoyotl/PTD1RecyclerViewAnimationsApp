@@ -7,7 +7,7 @@ import android.widget.Toast;
 
 import com.texocoyotl.ptd1recyclerviewanimationsapp.dummy.DummyContent;
 
-public class MainActivity extends AppCompatActivity implements ItemFragment.OnListFragmentInteractionListener {
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,8 +15,4 @@ public class MainActivity extends AppCompatActivity implements ItemFragment.OnLi
         setContentView(R.layout.activity_main);
     }
 
-    @Override
-    public void onListFragmentInteraction(DummyContent.DummyItem item) {
-        Toast.makeText(this, item.toString(), Toast.LENGTH_SHORT).show();
-    }
 }
